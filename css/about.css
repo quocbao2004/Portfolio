@@ -1,0 +1,186 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 10%;
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  color: #ff9800;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff9800;
+  margin-top: 5px;
+}
+
+.about-section h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.about-section h3 span {
+  color: #ff5722;
+}
+
+/* Info Section */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.info-box,
+.skills-box {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.1);
+}
+
+.info-box p {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.info-box p strong {
+  color: #ffffff;
+}
+
+/* Skills Progress Bars */
+.skills-box h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.progress-bar {
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 8px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ff9800;
+  width: 0;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/* Button Group */
+.button-group {
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #ff9800;
+  padding: 12px 25px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #ff9800;
+  transform: scale(1.05);
+}
+
+/* Timeline Section */
+#timeline {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+.timeline-box {
+  width: 45%;
+}
+
+.timeline-box h2 {
+  font-size: 2rem;
+  color: #ff9800;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-box h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff9800;
+  margin-top: 5px;
+}
+
+.timeline-item {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.1);
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff9800;
+  border-radius: 50%;
+}
+
+.timeline-item span {
+  font-weight: bold;
+  color: #ff9800;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .info-container,
+  #timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box,
+  .skills-box,
+  .timeline-box {
+    width: 100%;
+  }
+}
